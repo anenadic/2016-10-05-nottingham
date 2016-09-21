@@ -39,11 +39,11 @@ eventbrite: "5272863276"          # optional: alphanumeric key for Eventbrite re
 -->
 {% if page.eventbrite %}
 <iframe
-  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
-  frameborder="0"
-  width="100%"
-  height="248px"
-  scrolling="auto">
+        src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
+        frameborder="0"
+        width="100%"
+        height="248px"
+        scrolling="auto">
 </iframe>
 {% endif %}
 
@@ -151,18 +151,18 @@ eventbrite: "5272863276"          # optional: alphanumeric key for Eventbrite re
   <strong>Contact</strong>:
   Please email
   {% if page.contact %}
-      {% for contact in page.contact: %}
-        {% if forloop.last and page.contact.size > 1 %}
-          or
-        {% else %}
-          {% unless forloop.first %}
-            ,
-          {% endunless %}
-        {% endif %}
-        <a href='mailto:{{contact}}'>{{contact}} </a>
-      {% endfor %}
+  {% for contact in page.contact: %}
+  {% if forloop.last and page.contact.size > 1 %}
+  or
   {% else %}
-    to-be-announced
+  {% unless forloop.first %}
+  ,
+  {% endunless %}
+  {% endif %}
+  <a href='mailto:{{contact}}'>{{contact}} </a>
+  {% endfor %}
+  {% else %}
+  to-be-announced
   {% endif %}
   <!--<a href="mailto:{{page.contact}}">{{page.contact}}</a>-->
   for more information.
@@ -198,16 +198,19 @@ eventbrite: "5272863276"          # optional: alphanumeric key for Eventbrite re
   -->
 <h2 id="general">Sponsors and supporters</h2>
 <div class="row">
-    <div class="col-md-12">
-      <p>
-        This workshop has been sponsored and supported by:
-      </p>
-    </div>
+  <div class="col-md-12">
+    <p>
+      This workshop has been sponsored and supported by:
+    </p>
+  </div>
   <div class="col-md-3">
     <img style="max-height: 50px;" src="https://www.elixir-europe.org/system/files/styles/medium/private/250-elixir_uk_node_logo.png?itok=KIeak5bi" alt="ELIXIR-UK"/>
   </div>
-    <div class="col-md-3">
+  <div class="col-md-3">
     <img style="max-height: 50px;" src="https://www.software.ac.uk/themes/ssi/ssi_logo_with_name-small2.png" alt="SSI"/>
+  </div>
+  <div class="col-md-3">
+    <img style="max-height: 50px;" src="https://www.nottingham.ac.uk/SiteElements/Images/Base/logo.png" alt="University of Nottingham"/>
   </div>
 </div>
 
@@ -421,8 +424,8 @@ eventbrite: "5272863276"          # optional: alphanumeric key for Eventbrite re
               <strong>
                 Keep "Use Git from the Windows Command Prompt" selected and click on "Next".
               </strong>
-                If you forgot to do this programs that you need for the workshop will not work properly.
-                If this happens rerun the installer and select the appropriate option.
+              If you forgot to do this programs that you need for the workshop will not work properly.
+              If this happens rerun the installer and select the appropriate option.
             </li>
             <!-- Choosing the SSH executable -->
             <li>Click on "Next".</li>
@@ -504,7 +507,7 @@ eventbrite: "5272863276"          # optional: alphanumeric key for Eventbrite re
     Please consider what personal information you'd like to reveal. For
     example, you may want to review these
     <a href="https://help.github.com/articles/keeping-your-email-address-private/">instructions
-    for keeping your email address private</a> provided at GitHub.
+      for keeping your email address private</a> provided at GitHub.
   </p>
 
   <div class="row">
