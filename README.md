@@ -12,10 +12,11 @@ template for creating websites for workshops.
     [automatically published as a website by GitHub][github-project-pages].
 
 3.  Once you are done,
-    please **send your repository's URL to the [Software Carpentry administrator][contact]**.
+    please fill in [this self-organized workshop form][self-organized-workshop-form]
+    and the administrator will contact you if we need any extra information.
     We build the list of workshops on our websites from the data included in your `index.html` page.
     We can only do that if you [customize][customization] that page correctly
-    *and* send us a link to your workshop website.
+    *and* [fill in the form][self-organized-workshop-form].
 
 If you run into problems,
 or have ideas about how to make this process simpler,
@@ -107,9 +108,12 @@ please [get in touch](#getting-and-giving-help).
     please do all of your work in your repository's `gh-pages` branch,
     since [GitHub automatically publishes that as a website][github-project-pages].
 
-5.  When you are done editing,
+4.  When you are done editing,
     go to the GitHub Pages URL for your workshop and preview your changes.
     In the example above, this is `https://gvwilson.github.io/2016-12-01-miskatonic`.
+    The finished page should look [something like this](fig/completed-page.png?raw=true).
+
+5.  Optional: you can now change the README.md file in your website's repository, which contains these instructions, so that it contains a short description of your workshop and a link to the workshop website.
 
 **Note:**
 this template includes some files and directories that most workshops do not need,
@@ -144,6 +148,22 @@ you can do so as described below.
     (You must have Python 3 installed to do this.)
     If you have Make installed,
     you can also run this command by typing `make workshop-check`.
+
+## (Optional) Linking to Your Page
+
+At the top of your repository on GitHub you'll see
+
+~~~
+No description or website provided. — Edit
+~~~
+
+Click 'Edit' and add:
+
+1.  A very brief description of your workshop in the "Description" box (e.g., "Miskatonic University workshop, Dec. 2016")
+
+2.  The URL for your workshop in the "Website" box (e.g., `https://gvwilson.github.io/2016-12-01-miskatonic`)
+
+This will help people find your website if they come to your repository's home page.
 
 ## Creating Extra Pages
 
@@ -228,11 +248,12 @@ or [mail us][contact].
 [github-project-pages]: https://help.github.com/articles/creating-project-pages-manually/
 [importer]: http://import.github.com/new
 [issues]: https://github.com/swcarpentry/workshop-template/issues
-[jekyll]: https://jekyllrb.com/
 [jekyll-windows]: http://jekyll-windows.juthilo.com/
+[jekyll]: https://jekyllrb.com/
 [lesson-example]: https://swcarpentry.github.io/lesson-example/
 [pyyaml]: https://pypi.python.org/pypi/PyYAML
 [ruby-install-guide]: https://www.ruby-lang.org/en/downloads/
 [ruby-installer]: http://rubyinstaller.org/
 [rubygems]: https://rubygems.org/pages/download/
+[self-organized-workshop-form]: https://amy.software-carpentry.org/workshops/submit/
 [swc-site]: http://software-carpentry.org
